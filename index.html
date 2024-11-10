@@ -13,13 +13,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>喵星汇-导航 | 资源分享站</title>
-
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/index-header.css">
-  <link rel="stylesheet" href="./css/index-main.css">
-  <link rel="stylesheet" href="./css/index-footer.css">
-  <link rel="stylesheet" href="./css/index-body-background.css">
-
+  <link rel="stylesheet" href="./public/css/index.css">
+  <link rel="stylesheet" href="./public/css/index-header.css">
+  <link rel="stylesheet" href="./public/css/index-main.css">
+  <link rel="stylesheet" href="./public/css/index-footer.css">
+  <link rel="stylesheet" href="./public/css/index-body-background.css">
 </head>
 
 <body>
@@ -34,6 +32,7 @@
 
     <main class="main">
 
+      <!-- 日期 -->
       <div class="main-date">
         <h2 class="date-1">{{ date_1 }}</h2>
         <h4 class="date-2">{{ date_2 }}</h4>
@@ -55,9 +54,6 @@
         </div>
       </div>
 
-
-
-
       <!-- 模块内容 -->
       <div class="main-module">
         <div class="main-module-box" v-for="item in module_content">
@@ -76,7 +72,6 @@
           </div>
         </div>
       </div>
-
 
     </main>
 
@@ -136,7 +131,7 @@
 
 
   <!-- 回到顶部 -->
-  <link rel="stylesheet" href="./css/index-back-to-top.css">
+  <link rel="stylesheet" href="./public/css/index-back-to-top.css">
   <div class="back-to-top">
     <img src="./public/icon/返回顶部 .svg" alt="">
   </div>
@@ -146,14 +141,10 @@
 
   <script src="./node_modules/axios@1.6.5/axios.min.js"></script>
   <script src="./node_modules/vue@2.6.10/vue.min.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="./js/index-header.js"></script>
-
+  <script src="./public/js/index.js"></script>
+  <script src="./public/js/index-header.js"></script>
   <!-- 回到顶部-JS -->
-  <script src="./js/index-back-to-top.js"></script>
-
-
-
+  <script src="./public/js/index-back-to-top.js"></script>
 
 </body>
 

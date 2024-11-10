@@ -18,9 +18,8 @@ const app = new Vue({
     ],
 
     // 模块内容
-    module_content: [
-      // { title: '', content: [{ name: '', logo: '', url: '' },] },
-    ]
+    // 格式：module_content: [{ title: '', content: [{ name: '', logo: '', url: '' },] }],
+    module_content: []
   },
 
 
@@ -29,8 +28,9 @@ const app = new Vue({
     // 获取模块内容
     getModuleContent() {
       axios({
+        // 请求地址可以是json文件，也可以是后端接口（后端管理端可以自己编写），例：http://localhost:8080/mxh-nav/list
+        // url: 'http://localhost:8080/mxh-nav/list'
         url: './public/json/module_content.json'
-        // url: 'http://192.168.1.254:9090/nav/list'
       }).then(res => {
         this.module_content = res.data.data
       })
@@ -49,8 +49,11 @@ const app = new Vue({
       const minutes = String(now.getMinutes()).padStart(2, '0');
       const seconds = String(now.getSeconds()).padStart(2, '0');
 
+      // 返回时间带秒
       // const currentTime = `${hours}:${minutes}:${seconds}`
+      // 返回时间不带秒
       const currentTime = `${hours}:${minutes}`
+
       this.date_1 = currentTime
       const currentDate = `${year}年${month}月${date}日 ${dayOfWeek}`
       this.date_2 = currentDate
@@ -58,6 +61,7 @@ const app = new Vue({
     // 获取-励志短句
     getSentence() {
       axios({
+        // 喵星汇开发接口地址：https://mxh-open.apifox.cn
         url: 'https://hmajax.itheima.net/api/ambition'
       }).then(res => {
         this.date_3 = res.data.data
@@ -93,7 +97,6 @@ const app = new Vue({
       const inp = document.querySelector('.main-search .search_frame .ss1')
       inp.focus()
     }
-
   },
 
 
