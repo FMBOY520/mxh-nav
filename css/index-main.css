@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.main {
+  margin: 50px 0;
+  width: 100%;
+  min-height: 400px;
+}
+
+
+.main-date {
+  color: #fff;
+  text-align: center;
+}
+
+.main-date .date-1 {
+  color: transparent;
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.6), 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-size: 5rem;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: .4rem;
+}
+
+.main-date .date-2 {
+  margin: 10px 0;
+  color: transparent;
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+
+.main-date .date-3 {
+  margin: 0 auto;
+  width: 80%;
+  color: transparent;
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+}
+
+
+/* 搜索 */
+.main-search {
+  margin: 10px auto;
+  width: 80%;
+  min-width: 300px;
+  max-width: 800px;
+  /* background-color: #7a7a7a; */
+}
+
+.main-search .search_frame {
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff60;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0px #ffffff60;
+  overflow: hidden;
+}
+
+.main-search .search_frame form {
+  width: 100%;
+  height: 100%;
+}
+
+.main-search .search_frame .ss1 {
+  padding: 0 10px;
+  float: left;
+  width: 80%;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+  background-color: #ffffff00;
+  outline: none;
+  border: none;
+}
+
+.main-search .search_frame .ss1::placeholder {
+  color: #ececec;
+  font-size: 14px;
+}
+
+.main-search .search_frame .ss2 {
+  float: right;
+  width: 20%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ffffff00;
+  border: none;
+  border-left: 2px solid #fff;
+  transition: .2s;
+}
+
+.main-search .search_frame .ss2:hover {
+  font-size: 16px;
+  background-color: #ffffff50;
+}
+
+.main-search .search_nav {
+  margin: 5px 0;
+  height: 40px;
+  text-align: center;
+  background-color: #00000040;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+
+}
+
+.main-search a {
+  display: inline-block;
+  margin: 0 5px;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 15px;
+  transition: .2s;
+}
+
+.main-search a:hover {
+  font-size: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 #ffffff60
+}
+
+.list-btn-on {
+  border-bottom: 2px solid #ff9f00;
+}
+
+
+
+
+
+
+
+/* 模块内容 */
+.main-module {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.main-module-box {
+  margin: 20px 0;
+}
+
+.main-module-box .title {
+  color: #fff;
+  font-size: 16px;
+}
+
+.main-module-box .content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  width: 100%;
+  /* background-color: #ffffff50; */
+}
+
+.main-module-box .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 20%;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 650px) {
+  .main-module-box .box {
+    width: 25%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-module-box .box {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-module-box .box {
+    width: 50%;
+  }
+}
+
+.main-module-box .box .mod {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff60;
+  border-radius: 10px;
+  box-shadow: 0 0 10px -5px #000;
+  overflow: hidden;
+  transition: .2s;
+}
+
+.main-module-box .box .mod:hover {
+  background-color: #ffffff95;
+  box-shadow: 0 0 10px 0 #fff;
+  transform: scale(.95);
+}
+
+.main-module-box .box .mod .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  /* background-color: #ff9f00; */
+}
+
+.main-module-box .box .mod .logo .img {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff99;
+  border-radius: 8px;
+}
+
+.main-module-box .box .mod .logo .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-module-box .box .mod .name {
+  padding: 0 10px;
+  width: 100%;
+  height: 30%;
+  color: #fff;
+  font-size: 14px;
+  font-family: '楷体';
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* background-color: red; */
+}

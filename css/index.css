@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: #242424;
+  background: linear-gradient(to right, #6868cd, #0fd0c0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* 设置滚动条的宽度和背景色 */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ecb4dc;
+}
+
+/* 设置滚动条的滑块颜色和形状 */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
