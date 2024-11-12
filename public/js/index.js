@@ -15,6 +15,7 @@ const app = new Vue({
       { title: '百度', url: 'https://www.baidu.com/s', placeholder: '百度一下', name: 'wd' },
       { title: 'Bing', url: 'https://cn.bing.com/search', placeholder: '微软Bing搜索', name: 'q' },
       { title: '哔哩哔哩', url: 'https://search.bilibili.com/all', placeholder: 'blbl搜索', name: 'keyword' },
+      { title: 'CSDN', url: 'https://so.csdn.net/so/search', placeholder: 'CSDN', name: 'q' },
     ],
 
     // 模块内容

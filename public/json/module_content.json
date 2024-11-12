@@ -24,16 +24,6 @@
           "name": "CSDN",
           "logo": "https://www.csdn.net/favicon.ico",
           "url": "https://www.csdn.net"
-        },
-        {
-          "name": "Gitee",
-          "logo": "https://gitee.com/favicon.ico",
-          "url": "https://gitee.com"
-        },
-        {
-          "name": "Github",
-          "logo": "https://github.com/favicon.ico",
-          "url": "https://github.com"
         }
       ]
     },
@@ -99,11 +89,6 @@
           "name": "CTF资源库|CTF工具下载|CTF工具包|CTF工具集合",
           "logo": "https://www.ctftools.com//favicon.ico",
           "url": "https://www.ctftools.com"
-        },
-        {
-          "name": "地图 | 卡巴斯基网络威胁实时地图",
-          "logo": "https://cybermap.kaspersky.com/images/Kaspersky_Web_Favicon_256x256.png",
-          "url": "https://cybermap.kaspersky.com/cn"
         }
       ]
     },
