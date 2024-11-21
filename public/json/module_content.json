@@ -3,6 +3,21 @@
   "message": "获取导航列表成功！",
   "data": [
     {
+      "title": "喵星汇-站内",
+      "content": [
+        {
+          "name": "喵星汇-聊天网",
+          "logo": "https://mxh.fmboy.com/favicon.ico",
+          "url": "https://mxh.fmboy.com/web/chatnet"
+        },
+        {
+          "name": "喵星汇-AI",
+          "logo": "https://mxh.fmboy.com/favicon.ico",
+          "url": "https://mxh.fmboy.com/web/AI"
+        }
+      ]
+    },
+    {
       "title": "我的常用",
       "content": [
         {
@@ -134,16 +149,6 @@
           "name": "使用全球连通云连接和保护 | Cloudflare",
           "logo": "https://www.cloudflare-cn.com/favicon.ico",
           "url": "https://www.cloudflare-cn.com"
-        },
-        {
-          "name": "狐蒂云计算平台",
-          "logo": "https://bf.xybhdy.com/123%2F662a6e190d26e.png",
-          "url": "https://www.szhdy.com"
-        },
-        {
-          "name": "优丰互联 - 为站长提供一站式产品与服务 - 优丰互联",
-          "logo": "https://www.disxcloud.com/themes/web/www/favicon.ico",
-          "url": "https://www.disxcloud.com"
         }
       ]
     }
