@@ -3,21 +3,6 @@
   "message": "获取导航列表成功！",
   "data": [
     {
-      "title": "喵星汇-站内",
-      "content": [
-        {
-          "name": "喵星汇-聊天网",
-          "logo": "https://mxh.fmboy.com/favicon.ico",
-          "url": "https://mxh.fmboy.com/web/chatnet"
-        },
-        {
-          "name": "喵星汇-AI",
-          "logo": "https://mxh.fmboy.com/favicon.ico",
-          "url": "https://mxh.fmboy.com/web/AI"
-        }
-      ]
-    },
-    {
       "title": "我的常用",
       "content": [
         {
@@ -29,6 +14,11 @@
           "name": "百度翻译",
           "logo": "https://fanyi.baidu.com/favicon.ico",
           "url": "https://fanyi.baidu.com"
+        },
+        {
+          "name": "Gitee",
+          "logo": "https://gitee.com/favicon.ico",
+          "url": "https://gitee.com"
         },
         {
           "name": "哔哩哔哩",
@@ -43,112 +33,92 @@
       ]
     },
     {
-      "title": "AI",
+      "title": "收藏001",
       "content": [
         {
-          "name": "AIchatOS2",
-          "logo": "https://chat18.aichatos58.com/favicon.ico",
-          "url": "https://chat18.aichatos58.com"
+          "name": "百度一下",
+          "logo": "https://www.baidu.com/favicon.ico",
+          "url": "https://www.baidu.com"
         },
         {
-          "name": "chatos",
-          "logo": "https://cat.caichatosb.com/chatosGPT4.png",
-          "url": "https://cat.caichatosb.com"
+          "name": "百度翻译",
+          "logo": "https://fanyi.baidu.com/favicon.ico",
+          "url": "https://fanyi.baidu.com"
         },
         {
-          "name": "讯飞星火大模型",
-          "logo": "https://xinghuo.xfyun.cn/favicon.ico",
-          "url": "https://xinghuo.xfyun.cn"
+          "name": "Gitee",
+          "logo": "https://gitee.com/favicon.ico",
+          "url": "https://gitee.com"
         },
         {
-          "name": "文心一言",
-          "logo": "https://nlp-eb.cdn.bcebos.com/logo/favicon.ico",
-          "url": "https://yiyan.baidu.com"
+          "name": "哔哩哔哩",
+          "logo": "https://www.bilibili.com/favicon.ico",
+          "url": "https://www.bilibili.com"
         },
         {
-          "name": "ChatAI Tool",
-          "logo": "https://www.chataitool.cn/favicon.ico",
-          "url": "https://www.chataitool.cn/"
+          "name": "CSDN",
+          "logo": "https://www.csdn.net/favicon.ico",
+          "url": "https://www.csdn.net"
         }
       ]
     },
     {
-      "title": "工具",
+      "title": "收藏002",
       "content": [
         {
-          "name": "测速网",
-          "logo": "https://www.speedtest.cn/favicon.ico",
-          "url": "https://www.speedtest.cn"
+          "name": "百度一下",
+          "logo": "https://www.baidu.com/favicon.ico",
+          "url": "https://www.baidu.com"
         },
         {
-          "name": "博客文章解析",
-          "logo": "https://mark.cuckooing.cn/favicon.ico",
-          "url": "https://mark.cuckooing.cn"
+          "name": "百度翻译",
+          "logo": "https://fanyi.baidu.com/favicon.ico",
+          "url": "https://fanyi.baidu.com"
         },
         {
-          "name": "蓝奏·云存储",
-          "logo": "https://up.woozooo.com/favicon.ico",
-          "url": "https://up.woozooo.com"
+          "name": "Gitee",
+          "logo": "https://gitee.com/favicon.ico",
+          "url": "https://gitee.com"
         },
         {
-          "name": "草料二维码生成器",
-          "logo": "https://cli.im/favicon.ico",
-          "url": "https://cli.im"
+          "name": "哔哩哔哩",
+          "logo": "https://www.bilibili.com/favicon.ico",
+          "url": "https://www.bilibili.com"
         },
         {
-          "name": "B站视频下载工具 | 极简纯净",
-          "logo": "https://zhouql.vip/bilibili/favicon.ico",
-          "url": "https://zhouql.vip/bilibili"
-        },
-        {
-          "name": "CTF资源库|CTF工具下载|CTF工具包|CTF工具集合",
-          "logo": "https://www.ctftools.com//favicon.ico",
-          "url": "https://www.ctftools.com"
+          "name": "CSDN",
+          "logo": "https://www.csdn.net/favicon.ico",
+          "url": "https://www.csdn.net"
         }
       ]
     },
     {
-      "title": "壁纸网站",
+      "title": "喵星汇-导航 开源地址",
       "content": [
         {
-          "name": "极简壁纸_海量电脑桌面壁纸美图_4K超高清_最潮壁纸网站",
-          "logo": "https://bz.zzzmh.cn/favicon.ico",
-          "url": "https://bz.zzzmh.cn/index"
+          "name": "开源地址",
+          "logo": "favicon.ico",
+          "url": "https://gitee.com/FMBOY/mxh-nav"
         },
         {
-          "name": "极简壁纸-不一样的视觉盛宴",
-          "logo": "https://www.jijianzy.com/favicon.ico",
-          "url": "https://www.jijianzy.com/bz/"
+          "name": "开源地址",
+          "logo": "favicon.ico",
+          "url": "https://gitee.com/FMBOY/mxh-nav"
         },
         {
-          "name": "泽风壁纸",
-          "logo": "https://haowallpaper.com/favicon.ico",
-          "url": "https://haowallpaper.com"
+          "name": "开源地址",
+          "logo": "favicon.ico",
+          "url": "https://gitee.com/FMBOY/mxh-nav"
         },
         {
-          "name": "世界著名的壁纸网站 电脑桌面壁纸 - WallHere 壁纸库",
-          "logo": "https://s.wallhere.com/media/apple-touch-icon-60x60.png?v=230118",
-          "url": "https://wallhere.com"
-        }
-      ]
-    },
-    {
-      "title": "服务器",
-      "content": [
-        {
-          "name": "阿里云-计算，为了无法计算的价值",
-          "logo": "https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico",
-          "url": "https://www.aliyun.com"
+          "name": "开源地址",
+          "logo": "favicon.ico",
+          "url": "https://gitee.com/FMBOY/mxh-nav"
         },
         {
-          "name": "腾讯云 产业智变·云启未来 - 腾讯",
-          "logo": "https://cloud.tencent.com/favicon.ico",
-          "url": "https://cloud.tencent.com"
-        },
-        {
-          "name": "使用全球连通云连接和保护 | Cloudflare",
-          "logo": "https://www.cloudflare-cn.com/favicon.ico",
-          "url": "https://www.cloudflare-cn.com"
+          "name": "开源地址",
+          "logo": "favicon.ico",
+          "url": "https://gitee.com/FMBOY/mxh-nav"
         }
       ]
     }

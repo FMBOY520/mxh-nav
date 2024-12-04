@@ -1,3 +1,6 @@
+import '../../node_modules/vue@2.6.10/vue.min.js'
+import '../../node_modules/axios@1.6.5/axios.min.js'
+
 const app = new Vue({
   el: '#app',
   data: {
