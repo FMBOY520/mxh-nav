@@ -4,6 +4,10 @@
 
 一个用于收藏个人常用网站的导航
 
+#### 技术栈：
+
+HTML/CSS、JavaScript、Vue2、Axios
+
 #### 作者：
 
 > 肥猫BOY

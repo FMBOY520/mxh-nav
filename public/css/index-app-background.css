@@ -1,5 +1,4 @@
-body {
-  min-height: 100vh;
+#app {
   background-color: #e493d0;
   background-image:
     radial-gradient(closest-side, rgba(235, 105, 78, 1), rgba(235, 105, 78, 0)),
@@ -24,7 +23,7 @@ body {
 }
 
 /* 背景模糊 */
-body::after {
+#app::after {
   content: '';
   display: block;
   position: fixed;

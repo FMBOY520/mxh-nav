@@ -5,7 +5,7 @@
 ========== ========== ==========
   喵星汇交流群：881568371
   站长：肥猫BOY
-  网站版本号：1.0.1
+  网站版本号：1.0.2
 ========== ========== ==========
 -->
 
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div id="app" class="gradient-background">
+  <div id="app">
 
     <header class="header">
       <div class="header-nav">
@@ -29,9 +29,8 @@
     </header>
 
     <main class="main">
-
       <!-- 日期 -->
-      <div class="main-date">
+      <div class="date">
         <h2 class="date-1">{{ date_1 }}</h2>
         <h4 class="date-2">{{ date_2 }}</h4>
         <h6 class="date-3">{{ date_3 }}</h6>
@@ -50,10 +49,6 @@
           <a href="javascript:;">Bing</a>
           <a href="javascript:;">哔哩哔哩</a>
           <a href="javascript:;">CSDN</a>
-          <!-- <a href="javascript:;" v-for="item in search_list"
-            :class="{'list-btn-on':search_placeholder==item.placeholder}">
-            {{ item.title }}
-          </a> -->
         </div>
       </div>
 
@@ -76,6 +71,10 @@
         </div>
       </div>
 
+      <!-- 回到顶部 -->
+      <div class="back-to-top">
+        <img src="./public/icon/BackToTop.svg" alt="">
+      </div>
     </main>
 
     <footer class="footer">
@@ -127,16 +126,7 @@
     </footer>
 
   </div>
-
-
   <script type="module" src="./public/js/index.js"></script>
-  <script type="module" src="./public/js/index-header.js"></script>
-
-  <!-- 回到顶部 -->
-  <div class="back-to-top"> <img src="./public/icon/BackToTop.svg" alt=""> </div>
-  <script src="./public/js/index-back-to-top.js"></script>
-
-
 </body>
 
 </html>

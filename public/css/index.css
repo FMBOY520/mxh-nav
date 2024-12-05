@@ -1,11 +1,13 @@
+/* 动态背景 */
+@import url('./index-app-background.css');
+
 /* 头部CSS */
 @import url('./index-header.css');
 /* 主体CSS */
 @import url('./index-main.css');
 /* 底部CSS */
 @import url('./index-footer.css');
-/* 动态背景 */
-@import url('./index-body-background.css');
+
 /* 回到顶部 */
 @import url('./index-back-to-top.css');
 
@@ -15,6 +17,14 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+
 
 /* 设置滚动条的宽度和背景色 */
 ::-webkit-scrollbar {

@@ -1,7 +1,10 @@
 import '../../node_modules/vue@2.6.10/vue.min.js'
 import '../../node_modules/axios@1.6.5/axios.min.js'
 
-const app = new Vue({
+// 获取当前时间
+import { getDate } from './utils/getDate.js'
+
+new Vue({
   el: '#app',
   data: {
     // 日期
@@ -28,50 +31,17 @@ const app = new Vue({
 
 
   methods: {
+    // 更新时间方法
+    updateDate() {
+      this.date_1 = `${getDate().hours}:${getDate().minutes}`
+      this.date_2 = `${getDate().year}年${getDate().month}月${getDate().date}日 ${getDate().dayOfWeek}`
+    },
 
     // 获取模块内容
     getModuleContent() {
-      axios({
-        // 请求地址可以是json文件，也可以是后端接口（后端管理端可以自己编写），例：http://localhost:8080/mxh-nav/list
-        // url: 'http://localhost:8080/mxh-nav/list'
-        url: './public/json/module_content.json'
-      }).then(res => {
-        this.module_content = res.data.data
-      })
+      // 请求地址可以是json文件，也可以是后端接口（后端管理端可以自己编写），例：http://localhost:8080/mxh-nav/list
+      axios({ url: './public/json/module_content.json' }).then(res => { this.module_content = res.data.data })
     },
-
-
-    // 更新日期
-    updateDate() {
-      const now = new Date();
-      const daysOfWeek = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-      const dayOfWeek = daysOfWeek[now.getDay()];
-      const year = now.getFullYear();
-      const month = String(now.getMonth() + 1).padStart(2, '0');
-      const date = String(now.getDate()).padStart(2, '0');
-      const hours = String(now.getHours()).padStart(2, '0');
-      const minutes = String(now.getMinutes()).padStart(2, '0');
-      const seconds = String(now.getSeconds()).padStart(2, '0');
-
-      // 返回时间带秒
-      // const currentTime = `${hours}:${minutes}:${seconds}`
-      // 返回时间不带秒
-      const currentTime = `${hours}:${minutes}`
-
-      this.date_1 = currentTime
-      const currentDate = `${year}年${month}月${date}日 ${dayOfWeek}`
-      this.date_2 = currentDate
-    },
-    // 获取-励志短句
-    getSentence() {
-      axios({
-        // 喵星汇开发接口地址：https://mxh-open.apifox.cn
-        url: 'https://hmajax.itheima.net/api/ambition'
-      }).then(res => {
-        this.date_3 = res.data.data
-      })
-    },
-
 
     // 搜索列表切换方法
     searchListBtn(e) {
@@ -96,29 +66,58 @@ const app = new Vue({
         e.preventDefault()
       }
     },
-    // 自动选中输入框方法
-    inpOn() {
-      const inp = document.querySelector('.main-search .search_frame .ss1')
-      inp.focus()
-    }
   },
 
 
   created() {
-    this.getSentence()
+    // 获取-励志短句
+    // 喵星汇开发接口地址：https://mxh-open.apifox.cn
+    axios({ url: 'https://hmajax.itheima.net/api/ambition' }).then(res => { this.date_3 = res.data.data })
 
     // 获取模块内容
     this.getModuleContent()
   },
   mounted() {
-    this.updateDate();
-    // 每秒更新
-    this.interval = setInterval(this.updateDate, 1000);
+    // 更新时间
+    this.updateDate()
+    // 每秒更新时间
+    this.interval = setInterval(this.updateDate, 1000)
+
     // 进页面自动选中输入框
-    this.inpOn()
+    document.querySelector('.main-search .search_frame .ss1').focus()
   },
   beforeDestroy() {
     // 清理定时器
     clearInterval(this.interval);
   }
 })
+
+
+// 获取导航栏元素
+const header = document.querySelector('.header-nav')
+// 监听滚动事件
+window.onscroll = function () {
+  // 滚动超过100px时，添加浮动效果
+  if (window.scrollY > 40) {
+    header.classList.add('fixed');
+  } else {
+    header.classList.remove('fixed');
+  }
+  // 滚动超过 200px 时显示按钮
+  if (window.scrollY > 200) {
+    backToTopBtn.style.display = "flex";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+
+// 获取回到顶部按钮元素
+const backToTopBtn = document.querySelector('.back-to-top')
+// 点击按钮回到顶部
+backToTopBtn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // 平滑滚动
+  });
+};

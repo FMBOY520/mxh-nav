@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: 60px;
-  /* background-color: #ccc; */
 }
-
 
 .header-nav {
   top: -50px;
-
   display: flex;
   align-items: center;
 
@@ -30,8 +30,15 @@
   margin: 0 10px;
   color: #fff;
   font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  transition: .2s;
 }
 
+.header-nav a:hover {
+  color: #f30ba4;
+  font-weight: bold;
+  transform: scale(.9);
+}
 
 .header-nav.fixed {
   position: fixed;
