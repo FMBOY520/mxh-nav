@@ -1,8 +1,6 @@
 footer {
   padding: 20px;
-  width: 100%;
   background-color: #1a1a1a;
-  /* backdrop-filter: blur(5px); */
 }
 
 /* ---------- 信息 ---------- */
@@ -10,27 +8,13 @@ footer {
   display: flex;
 }
 
-@media (max-width: 600px) {
-  .footer-info {
-    flex-wrap: wrap;
-  }
-}
-
-
-
-
+/* 内容 */
 .footer-info-content {
   width: 100%;
 }
 
 .footer-info-content .title {
   margin: 20px 0;
-}
-
-@media (max-width: 600px) {
-  .footer-info-content .title {
-    text-align: center;
-  }
 }
 
 .footer-info-content .title .logo {
@@ -62,30 +46,15 @@ footer {
   font-size: 14px;
 }
 
-@media (max-width: 600px) {
-  .footer-info-content .content {
-    text-align: center;
-  }
-}
-
-
-
-
+/* 链接 */
 .footer-info-link {
-  margin-top: 20px;
-  padding: 0 20px;
+  padding: 20px;
   width: 100%;
-  /* background-color: green; */
-}
-
-@media(max-width:600px) {
-  .footer-info-link {
-    text-align: center;
-  }
 }
 
 .footer-info-link a {
   display: inline-block;
+  margin: 4px;
   padding: 8px;
   width: 35px;
   height: 35px;
@@ -102,30 +71,20 @@ footer {
   width: 100%;
 }
 
-
-
-
 /* 二维码 */
 .footer-info-QR {
-  margin-top: 20px;
+  padding: 20px 0;
   width: 100%;
   text-align: right;
 }
 
-@media(max-width:600px) {
-  .footer-info-QR {
-    text-align: center;
-  }
-}
-
-.footer-info-QR .gzh,
-.footer-info-QR .zsm {
+.footer-info-QR .QR {
   display: inline-block;
   margin: 0 10px;
   width: 100px;
 }
 
-.footer-info-QR .QR {
+.footer-info-QR .QR .url {
   padding: 5px;
   width: 100px;
   height: 100px;
@@ -138,7 +97,7 @@ footer {
   height: 100%;
 }
 
-.footer-info-QR .title {
+.footer-info-QR .QR .title {
   margin: 10px 0;
   color: #6c757d;
   font-size: 10px;
@@ -150,19 +109,59 @@ footer {
 
 /* ---------- 版权 ---------- */
 .footer-copyright {
-  margin-top: 20px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
   color: #6c757d;
   font-size: 12px;
-  /* background-color: red; */
-}
-
-@media(max-width:600px) {
-  .footer-copyright {
-    text-align: center;
-  }
 }
 
 .footer-copyright a {
   color: #c6c9cf;
+}
+
+
+
+
+/* ---------- 移动端适配 ---------- */
+@media(max-width:600px) {
+
+  /* ---------- 信息 ---------- */
+  .footer-info {
+    flex-wrap: wrap;
+  }
+
+  .footer-info-content .title {
+    text-align: center;
+  }
+
+  .footer-info-content .content {
+    text-align: center;
+  }
+
+  .footer-info-link {
+    text-align: center;
+  }
+
+  .footer-info-QR {
+    text-align: center;
+  }
+
+  /* ---------- 版权 ---------- */
+  .footer-copyright {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-copyright .copyright {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-copyright .version {
+    display: block;
+    color: #505050;
+    font-size: 10px;
+  }
 }

@@ -1,41 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-main {
+.main {
   /* padding: 50px 0; */
   width: 100%;
   min-height: 100vh;
+  /* background-color: #222; */
 }
 
 /* 日期 */
-main .date {
+.main .date-text {
   color: #fff;
   text-align: center;
 }
 
-main .date-1 {
-  color: transparent;
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.6), 0px 4px 4px rgba(0, 0, 0, 0.1);
-  font-size: 5rem;
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: .4rem;
-}
-
-main .date-2 {
-  margin: 10px 0;
+.main .date-text {
   color: transparent;
   text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 4px rgba(0, 0, 0, 0.1);
   font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
 }
 
-main .date-3 {
+.main .date-text.text1 {
+  font-size: 5rem;
+  letter-spacing: .4rem;
+}
+
+.main .date-text.text2 {
+  margin: 10px 0;
+  font-size: 18px;
+  letter-spacing: .2rem;
+}
+
+.main .date-text.text3 {
   margin: 0 auto;
   width: 80%;
   min-width: 300px;
   max-width: 800px;
-  color: transparent;
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Quicksand', sans-serif;
   font-size: 14px;
 }
 

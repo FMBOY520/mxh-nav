@@ -5,7 +5,7 @@
 ========== ========== ==========
   喵星汇交流群：881568371
   站长：肥猫BOY
-  网站版本号：1.0.2
+  网站版本号：1.1.0
 ========== ========== ==========
 -->
 
@@ -20,35 +20,49 @@
   <div id="app">
 
     <header class="header">
-      <div class="header-nav">
-        <a href="https://gitee.com/FMBOY" target="_blank">Gitee</a>
-        <a href="https://github.com/FMBOY520" target="_blank">GitHub</a>
-        <a href="https://blog.csdn.net/m0_74175846" target="_blank">CSDN</a>
-        <a href="https://mxh.fmboy.com/web/AI" target="_blank">AI</a>
+      <div class="header-nav" ref="HeaderNav">
+        <div class="title">
+          <div class="logo">
+            <img src="./public/img/logo/logo.png" alt="">
+          </div>
+          <div class="name">
+            <h2>喵星汇-导航</h2>
+            <p>mxh.fmboy.com</p>
+          </div>
+        </div>
+
+        <div class="nav">
+          <a href="https://gitee.com/FMBOY" target="_blank">Gitee</a>
+          <a href="https://github.com/FMBOY520" target="_blank">GitHub</a>
+          <a href="https://blog.csdn.net/m0_74175846" target="_blank">CSDN</a>
+          <a href="https://mxh.fmboy.com/web/AI" target="_blank">AI</a>
+        </div>
+      </div>
+
+      <!-- 回到顶部 -->
+      <div class="back-to-top" ref="BackToTop">
+        <img src="./public/icon/BackToTop.svg" alt="">
       </div>
     </header>
 
     <main class="main">
       <!-- 日期 -->
       <div class="date">
-        <h2 class="date-1">{{ date_1 }}</h2>
-        <h4 class="date-2">{{ date_2 }}</h4>
-        <h6 class="date-3">{{ date_3 }}</h6>
+        <h2 class="date-text text1">{{ date_1 }}</h2>
+        <h4 class="date-text text2">{{ date_2 }}</h4>
+        <h6 class="date-text text3">{{ date_3 }}</h6>
       </div>
 
       <!-- 搜索 -->
       <div class="main-search">
         <div class="search_frame">
-          <form :action="search_url" target="_blank">
-            <input class="ss1" type="text" :name="search_name" :placeholder="search_placeholder" v-model="search_value">
+          <form :action="search.url" target="_blank">
+            <input class="ss1" type="text" :name="search.name" :placeholder="search.placeholder" v-model="search.value">
             <button class="ss2" type="submit" @click="searchBtn">搜索</button>
           </form>
         </div>
         <div class="search_nav" @click="searchListBtn">
-          <a href="javascript:;" class="list-btn-on">百度</a>
-          <a href="javascript:;">Bing</a>
-          <a href="javascript:;">哔哩哔哩</a>
-          <a href="javascript:;">CSDN</a>
+          <a href="javascript:;" v-for="item in search.list">{{item.title}}</a>
         </div>
       </div>
 
@@ -70,11 +84,6 @@
           </div>
         </div>
       </div>
-
-      <!-- 回到顶部 -->
-      <div class="back-to-top">
-        <img src="./public/icon/BackToTop.svg" alt="">
-      </div>
     </main>
 
     <footer class="footer">
@@ -90,38 +99,26 @@
               <p>mxh.fmboy.com</p>
             </div>
           </div>
-          <div class="content">
-            欢迎来到喵星汇，此网站用于分享一些开发者、娱乐、影视等网站，也会分享一些开源项目。
-          </div>
+          <div class="content" v-html="footer.content"></div>
         </div>
 
         <div class="footer-info-link">
-          <a target="_blank"
-            href="https://qm.qq.com/cgi-bin/qm/qr?k=EcLOPfOlyracU7D30tuxcZT5va5oMsq5&jump_from=webapi&authKey=ir7Xc3FeaPDeuBO1X7o2UEuOz7dERRQWd548kM3JYFALR7HCob5ELEH9imuWBKJ3">
-            <img src="./public/icon/QQ.svg" alt="">
-          </a>
-          <a target="_blank" href="mailto:fmboy520@qq.com">
-            <img src="./public/icon/Email.svg" alt="">
+          <a v-for="item in footer.link" target="_blank" :href="item.url">
+            <img :src="item.img" alt="">
           </a>
         </div>
 
         <div class="footer-info-QR">
-
-          <div class="gzh">
-            <div class="QR"> <img src="./public/img/QR/FMBOY-GongZhongHao.jpg" alt=""> </div>
-            <p class="title">公众号</p>
+          <div class="QR" v-for="item in footer.QR">
+            <div class="url"><img :src="item.url" alt=""></div>
+            <p class="title">{{item.title}}</p>
           </div>
-          <div class="zsm">
-            <div class="QR"> <img src="./public/img/QR/FMBOY-ZanShangMa.jpg" alt=""> </div>
-            <p class="title">微信赞赏</p>
-          </div>
-
         </div>
       </div>
       <!-- 版权 -->
       <div class="footer-copyright">
-        Copyright © 2024-2024
-        <a href="/">喵星汇</a>
+        <span class="copyright" v-html="copyright"></span>
+        <span class="version">网站版本：{{version}}</span>
       </div>
     </footer>
 
